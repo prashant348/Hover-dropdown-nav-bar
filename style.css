@@ -1,0 +1,235 @@
+* {
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#navbar {
+    height: 75px;
+    width: 100%;
+    /* background-color:rgb(71, 71, 71); */
+    border-bottom: 1px solid rgb(190, 190, 190);
+    display: grid;
+    grid-template-columns: 9% 5% 50% 36%;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+
+#search-bar {
+    height: 65%;
+    width: 95%;
+    border-radius: 50px;
+    border: 1px solid rgb(190, 190, 190);
+    padding-left: 40px;
+    outline: none;
+    background-color: white;
+    color: rgb(40, 40, 40);
+    font-weight: 400px;
+    /* transition: border 0.5s ease; */
+}
+
+#search-bar:hover {
+    background-color: whitesmoke;
+}
+#search-bar:focus {
+    border: 1px solid purple;
+}
+#search-bar::placeholder {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-links-2 {
+    display: flex;
+    list-style: none;
+    /* background-color: aqua; */
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#dropdown {
+    list-style: none;
+    position: relative;
+}
+
+#dropdown a {
+    background-color: transparent;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#logo {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    
+}
+
+.icons {
+    font-size: 15px;
+    /* text-shadow: 0px 0px 5px purple; */
+    color: rgb(40, 40, 40);
+    /* background-color: green; */
+    height: 25px;width: 25px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease-in-out,
+                background-color 0.3s ease-in-out;
+}
+
+.icons:hover {
+    background-color: rgb(245, 223, 253);
+    color: rgb(81, 0, 128);
+}
+
+
+#profile-icon-box {
+    height: 40px;width: 40px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#profile-icon {
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+#profile-icon-box:hover {
+    background-color: rgb(245, 223, 253);
+}
+
+#profile-icon-box:hover #profile-icon {
+    color: rgb(81, 0, 128);
+}
+
+#dropdown-menu {
+    /* display: none; */
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%; /* Show below the parent */
+    left: 0;
+    width: 300px;
+    border-radius: 4px;
+    list-style: none;
+    color: rgb(80, 80, 80);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 6px;
+    border: 1px solid rgb(146, 146, 146);
+    font-size: 13px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    opacity: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+
+
+
+#dropdown:hover #dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#dropdown-menu li  {
+    padding: 10px;
+    
+}
+
+#dropdown-btn-box {
+    /* background-color:green; */
+
+    height: 70px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#dropdown-btn-box:hover a {
+    color: rgb(81, 0, 128);
+}
+
+#dropdown a:hover {
+    color: rgb(81, 0, 128);
+    background-color: rgb(245, 223, 253);
+}
+
+
+.dropdown-menu-btn:hover {
+    background-color: rgb(252, 244, 255);
+    color: rgb(81, 0, 128);
+    cursor: pointer;
+}
+
+
+#tag {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links-2-btn {
+    color: rgb(40, 40, 40);
+    font-weight: 300;
+    cursor: pointer;
+    
+}
+
+.nav-links-2-box {
+    /* background-color: aqua; */
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+.nav-links-2-box:hover {
+    background-color: rgb(245, 223, 253);
+
+}
+
+.nav-links-2-box:hover li {
+    color: rgb(81, 0, 128);
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
